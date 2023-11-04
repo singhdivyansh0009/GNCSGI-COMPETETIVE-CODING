@@ -5,7 +5,8 @@ int costOfGroceries(int NoOfitems, int minFreshness, int *freshnessValue, int * 
     int totalCost = 0;
     for(int i = 0; i < NoOfitems; i++)  // it run for all the items
     {
-     /* if the freshnessValue of ith item is greater than minimum Freshness value then add the cost of that item in totalCost */
+     /* if the freshnessValue of ith item is greater than minimum Freshness value 
+        then add the cost of that item in totalCost */
         if(freshnessValue[i] >= minFreshness) {
            totalCost += costOfItem[i];  
         }
